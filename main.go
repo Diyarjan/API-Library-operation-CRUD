@@ -89,7 +89,6 @@ func main() {
 	// Mock Data
 	books = append(books, Book{ID: "1", Isbn: "448743", Title: "Book One", Author: &Author{Firstname: "John", Lastname: "Doe"}})
 	books = append(books, Book{ID: "2", Isbn: "847564", Title: "Book Two", Author: &Author{Firstname: "Steve", Lastname: "Smith"}})
-	books = append(books, Book{ID: "2", Isbn: "847564", Title: "Book Two", Author: &Author{Firstname: "Stevdfde", Lastname: "Smifdth"}})
 
 	// Route Handlers / Endpoints
 	r.HandleFunc("/api/books", getBooks).Methods("GET")
